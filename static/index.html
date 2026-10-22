@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f3ed">
+<title>NEKARRA | Women's Boutique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+.logo{display:flex;align-items:center;gap:11px}.brandmark{width:58px;height:58px;border-radius:50%;object-fit:cover;border:1px solid #d5bc86}.logo span{display:flex;flex-direction:column;line-height:1.05}.logo small{font-family:Arial,sans-serif;font-size:7px;letter-spacing:2px;margin-top:6px;color:#8d723d}.preview-note{background:#f5efe5;text-align:center;padding:12px 5%;font-size:12px;color:#806947;border-bottom:1px solid var(--line)}@media(max-width:540px){.brandmark{height:42px;width:42px}.logo small{font-size:6px}}
+
+:root{--cream:#fbf8f3;--beige:#ece2d6;--ink:#302a26;--muted:#7e746b;--line:#e4d9cd;--accent:#a07934}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}button,a{font:inherit}a{text-decoration:none;color:inherit}button{cursor:pointer}.announcement{text-align:center;background:#40352f;color:#faf4ed;padding:10px 12px;font-size:11px;letter-spacing:1.1px}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 6%;border-bottom:1px solid var(--line);background:var(--cream);position:sticky;top:0;z-index:10}.logo{font-family:'Playfair Display',Georgia,serif;font-size:27px;letter-spacing:2px;white-space:nowrap}.navlinks{display:flex;gap:30px;font-size:12px;text-transform:uppercase;letter-spacing:1.3px}.navlinks a:hover{color:var(--accent)}.navright{display:flex;gap:16px;align-items:center}.iconbtn{border:0;background:none;font-size:20px}.hero{display:grid;grid-template-columns:47% 53%;min-height:625px;background:#eee5da}.hero-copy{padding:12% 10% 9% 13%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:700}.hero h1,.sectionhead h2,.story h2{font:400 clamp(44px,5.5vw,87px)/1.1 'Playfair Display',Georgia,serif;letter-spacing:-2px;margin:25px 0}.hero p{font-size:14px;color:#665b52;line-height:1.9;max-width:385px}.primary{display:inline-block;border:1px solid var(--ink);background:var(--ink);color:white;padding:17px 29px;text-transform:uppercase;letter-spacing:1.7px;font-size:11px;margin-top:23px;transition:.2s}.primary:hover{background:var(--accent);border-color:var(--accent)}.hero-photo{background:url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1400&q=85') center 37%/cover;min-height:580px}.trust{display:flex;justify-content:space-around;gap:10px;flex-wrap:wrap;padding:23px 6%;border-bottom:1px solid var(--line);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#695d55}.section{padding:90px 6%}.sectionhead{text-align:center;margin-bottom:43px}.sectionhead h2{font-size:clamp(34px,4vw,55px);margin:12px 0}.sectionhead p{font-size:13px;color:var(--muted)}.collections{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.collection{position:relative;height:450px;overflow:hidden;background:var(--beige)}.collection img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.collection:hover img{transform:scale(1.04)}.collection .overlay{position:absolute;inset:auto 0 0;padding:80px 25px 24px;background:linear-gradient(transparent,rgba(24,19,16,.62));color:white}.collection h3{font:30px 'Playfair Display',Georgia,serif;margin:0 0 9px}.collection span{font-size:11px;text-transform:uppercase;letter-spacing:2px}.product-controls{display:flex;justify-content:center;gap:10px;margin-bottom:30px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;padding:10px 17px;font-size:12px;color:#665c52}.filter.active{background:var(--ink);border-color:var(--ink);color:white}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.product{min-width:0}.product-image{position:relative;aspect-ratio:3/4;background:#ede5db;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .3s}.product:hover img{transform:scale(1.04)}.tag{position:absolute;left:12px;top:12px;background:var(--cream);font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:8px 10px}.product-body{padding:16px 2px}.product-meta{font-size:11px;line-height:1.5;color:var(--muted);margin:0 0 7px}.product-name{font:20px 'Playfair Display',Georgia,serif;margin:0 0 7px}.price{font-size:14px;color:#68594e;margin:0 0 15px}.order{width:100%;background:transparent;border:1px solid #54463c;color:#443a32;padding:13px 8px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase}.order:hover{background:var(--ink);color:#fff}.story{display:grid;grid-template-columns:1fr 1fr;background:#e9ddd0}.story-image{min-height:450px;background:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85') center/cover}.story-copy{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:80px 12%}.story h2{font-size:48px}.story p{font-size:14px;line-height:2;color:#6c5f55;max-width:430px}.footer{background:#332c27;color:#f6eee5;padding:55px 6% 25px}.footergrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}.footer h3{font:27px 'Playfair Display',Georgia,serif;margin:0 0 13px}.footer p,.footer a{display:block;font-size:12px;color:#d9cbbf;line-height:2.1}.footer h4{font-size:11px;letter-spacing:2px;text-transform:uppercase;margin:0 0 17px}.copyright{border-top:1px solid #655950;padding-top:20px;margin-top:50px;color:#b9ab9d;font-size:11px}.wa-float{position:fixed;bottom:24px;right:24px;z-index:12;border:0;border-radius:50px;background:#2d7756;color:white;box-shadow:0 8px 26px #0003;padding:15px 20px;font-size:12px;font-weight:700}.modal{position:fixed;inset:0;z-index:50;background:#0009;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-card{background:var(--cream);width:min(450px,100%);padding:28px;position:relative}.modal-card h3{font:30px 'Playfair Display',serif;margin:8px 0}.modal-card p{font-size:13px;color:var(--muted)}.modal-card label{display:block;font-size:12px;margin-top:17px;margin-bottom:6px}.modal-card select,.modal-card input{width:100%;padding:12px;border:1px solid var(--line);background:white;color:var(--ink)}.close{position:absolute;right:18px;top:14px;background:none;border:0;font-size:25px}.modal-card .primary{width:100%;margin-top:22px;text-align:center}.empty{text-align:center;color:var(--muted);grid-column:1/-1}@media(max-width:800px){.nav{padding:18px 5%}.logo{font-size:21px}.navlinks{gap:12px;font-size:10px}.hero{grid-template-columns:1fr}.hero-copy{padding:70px 8%}.hero-photo{min-height:410px;order:-1}.collections{gap:10px}.collection{height:320px}.products{grid-template-columns:repeat(2,1fr);gap:15px}.story h2{font-size:38px}.story-copy{padding:55px 8%}}@media(max-width:540px){.navlinks{display:none}.hero-photo{min-height:330px}.hero h1{font-size:50px}.section{padding:60px 5%}.collections{grid-template-columns:1fr}.collection{height:340px}.story{grid-template-columns:1fr}.story-image{min-height:310px}.footergrid{grid-template-columns:1fr 1fr}.footergrid>div:first-child{grid-column:1/-1}.trust{font-size:9px;line-height:1.8}.product-name{font-size:17px}.wa-float{padding:13px 15px}}
+</style>
+<style>
+.tryon-button{margin-top:8px;background:#f3e7d6;border-color:#a98a59;color:#62452d;font-weight:700}.tryon-button:hover{background:#d9bc8b;color:#2a2119}.tryon-card{width:min(650px,100%);max-height:92vh;overflow-y:auto}.tryon-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}.tryon-photos>div{min-width:0}.tryon-photos span{display:block;font-size:11px;color:#76695d;margin-bottom:7px}.tryon-photos img,.photo-prompt{width:100%;height:180px;object-fit:contain;background:#f0e8df;border:1px solid #e2d4c5}.photo-prompt{display:flex;align-items:center;justify-content:center;padding:10px;text-align:center;font-size:12px;color:#7d736b}.consent-label{display:flex!important;gap:8px;align-items:start;line-height:1.55}.consent-label input{width:auto!important;margin-top:3px}.privacy-hint{font-size:11px!important;line-height:1.6}.tryon-card #tryOnResult{border-top:1px solid #ddd1c3;margin-top:18px;padding-top:15px}.tryon-card #tryOnOutput{width:100%;max-height:470px;object-fit:contain;background:#eae1d7}.tryon-card #tryOnStatus{min-height:20px;color:#7a4f2c}body.tryon-open{overflow:hidden}
+</style>
+</head><body>
+<div class="announcement">NEKARRA · STYLE WITH GRACE · ORIGINAL DESIGNS</div>
+<header class="nav"><a href="#home" class="logo" id="brand-logo"><img src="/static/assets/nekarrra-logo.jpg" alt="NEKARRA logo" class="brandmark"><span>NEKARRA<small>STYLE WITH GRACE</small></span></a><nav class="navlinks"><a href="#home">Home</a><a href="#collections">Collections</a><a href="#shop">Shop All</a><a href="#about">Our Story</a></nav><div class="navright"><button class="iconbtn" title="Search collection" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'});document.getElementById('search').focus()">⌕</button><a href="#shop" title="Browse products">♡</a></div></header>
+<main id="home"><section class="hero"><div class="hero-copy"><div class="eyebrow">The Designer Edit · NEKARRA</div><h1>Designed with<br><em>grace.</em></h1><p>Discover original kurtis and ethnic tops designed with care. Feminine silhouettes, thoughtful details, and modern Indian elegance — created by NEKARRA.</p><a class="primary" href="#shop">Explore Collection &nbsp; ↗</a></div><div class="hero-photo" role="img" aria-label="Editorial boutique photograph for layout preview; replace with a photo of your NEKARRA designs"></div></section>
+<div class="trust"><span>✦ Original Designs</span><span>✦ Kurtis & Ethnic Tops</span><span>✦ Orders via WhatsApp</span><span>✦ Across India</span></div>
+<section class="section" id="collections"><div class="sectionhead"><div class="eyebrow">Find your signature style</div><h2>Explore Collections</h2><p>Original pieces for effortless everyday and occasion dressing.</p></div><div class="collections"><a class="collection" href="#shop" onclick="setFilter('Kurtis')"><img loading="lazy" src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=800&q=85" alt="Fashion sample photograph, replace with NEKARRA designer kurti"><div class="overlay"><h3>Designer Kurtis</h3><span>Shop the edit →</span></div></a><a class="collection" href="#shop" onclick="setFilter('Ethnic Tops')"><img loading="lazy" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85" alt="Fashion sample photograph, replace with NEKARRA ethnic top"><div class="overlay"><h3>Ethnic Tops</h3><span>Shop the edit →</span></div></a><a class="collection" href="#shop" onclick="setFilter('Signature Edit')"><img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85" alt="Fashion sample photograph, replace with NEKARRA signature designs"><div class="overlay"><h3>Signature Edit</h3><span>Shop the edit →</span></div></a></div></section>
+<div class="preview-note">Original NEKARRA designs · Browse our currently available collection.</div><section class="section" id="shop" style="padding-top:15px"><div class="sectionhead"><div class="eyebrow">Selected for you</div><h2>New Arrivals</h2><p>Explore original NEKARRA designs, curated for everyday elegance.</p></div><div class="product-controls"><button class="filter active" data-filter="All" onclick="setFilter('All')">All Pieces</button><button class="filter" data-filter="Kurtis" onclick="setFilter('Kurtis')">Kurtis</button><button class="filter" data-filter="Ethnic Tops" onclick="setFilter('Ethnic Tops')">Ethnic Tops</button><button class="filter" data-filter="Signature Edit" onclick="setFilter('Signature Edit')">Signature Edit</button><input id="search" placeholder="Search styles..." aria-label="Search products" oninput="renderProducts()" style="padding:10px;border:1px solid var(--line);background:transparent;max-width:180px"></div><div class="products" id="products"></div></section>
+<section class="story" id="about"><div class="story-image" role="img" aria-label="Curated fashion details"></div><div class="story-copy"><div class="eyebrow">The designer behind NEKARRA</div><h2>Designed by me. <em>Worn by you.</em></h2><p>At NEKARRA, each design begins with a personal vision. We create kurtis and ethnic tops that bring together contemporary ease and graceful Indian style. Every piece is made to express individuality.</p><a href="#shop" class="primary">Discover Our Pieces ↗</a></div></section></main>
+<footer class="footer"><div class="footergrid"><div><h3>NEKARRA</h3><p>Original kurtis & ethnic tops.<br>Designed with care. Style with Grace.</p></div><div><h4>Explore</h4><a href="#collections">Collections</a><a href="#shop">New Arrivals</a><a href="#about">Our Story</a></div><div><h4>Need Help?</h4><a href="#" onclick="contactWhatsApp(event)">WhatsApp Us</a><p>India · Prices in INR (₹)</p></div></div><div class="copyright">© <span id="year"></span> NEKARRA. All rights reserved.</div></footer>
+<button class="wa-float" onclick="contactWhatsApp(event)">✆ &nbsp; Chat on WhatsApp</button>
+<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" onclick="closeModal()" aria-label="Close">×</button><div class="eyebrow">WhatsApp Enquiry</div><h3 id="modalTitle">Order This Piece</h3><p id="modalProduct"></p><label for="size">Select Size</label><select id="size"><option value="XS">XS</option><option value="S">S</option><option value="M" selected>M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select><label for="customerName">Your name (optional)</label><input id="customerName" placeholder="Enter your name"><button class="primary" onclick="sendOrder()">Enquire on WhatsApp ↗</button><p style="font-size:11px">WhatsApp will open with a pre-filled message. Please confirm availability, shipping and payment directly with the store.</p></div></div>
+
+<div class="modal" id="tryOnModal" role="dialog" aria-modal="true" aria-labelledby="tryOnTitle">
+  <div class="modal-card tryon-card">
+    <button class="close" onclick="closeTryOn()" aria-label="Close try-on">×</button>
+    <div class="eyebrow">NEKARRA • Virtual Fitting Room</div>
+    <h3 id="tryOnTitle">See it on you</h3>
+    <p id="tryOnProduct"></p>
+    <div class="tryon-photos"><div><span>Selected NEKARRA outfit</span><img id="tryOnGarment" alt="Selected outfit"></div><div><span>Your photo</span><img id="tryOnPersonPreview" alt="Your uploaded photograph" style="display:none"><div id="tryOnEmpty" class="photo-prompt">Upload a front-facing photo</div></div></div>
+    <label for="tryOnPhoto">Upload your photo (JPG, PNG, WebP · max 6 MB)</label>
+    <input type="file" id="tryOnPhoto" accept="image/png,image/jpeg,image/webp" onchange="previewTryOnPhoto()">
+    <label class="consent-label"><input type="checkbox" id="tryOnConsent"> I am uploading a photo of myself, or have permission to use it, and consent to processing it locally on the NEKARRA computer for a virtual try-on. Photos are not stored in the product database.</label>
+    <p class="privacy-hint">NEKARRA does not save your uploaded photo in its catalog database. A third-party AI provider processes the image. Results are temporary. The preview is an illustration, <strong>not a measurement or guarantee of size or fit.</strong> For younger customers, a parent or guardian should handle photo uploads.</p>
+    <button class="primary" id="generateTryOn" onclick="generateTryOn()">Generate My Try-On ✦</button>
+    <p id="tryOnStatus" role="status" aria-live="polite"></p>
+    <div id="tryOnResult" hidden><h4>Your AI preview</h4><img id="tryOnOutput" alt="AI virtual try-on result"><p>AI-generated visualization only. Actual garment sizing, texture, and fit may differ.</p><button class="order" onclick="orderFromTryOn()">Enquire about this outfit on WhatsApp ↗</button></div>
+  </div>
+</div>
+<script>
+const STORE={name:'NEKARRA',whatsapp:''};
+let products=[],currentFilter='All',selectedProduct=null;
+const rupees=n=>'₹'+Number(n).toLocaleString('en-IN');
+function renderProducts(){
+ const q=document.getElementById('search').value.toLowerCase().trim();
+ const shown=products.filter(p=>(currentFilter==='All'||p.category===currentFilter)&&(`${p.name} ${p.code} ${p.category}`.toLowerCase().includes(q)));
+ const parent=document.getElementById('products');parent.replaceChildren();
+ if(!shown.length){const el=document.createElement('p');el.className='empty';el.textContent='No designs available in this category yet. Please check back soon.';parent.append(el);return;}
+ for(const p of shown){
+  const card=document.createElement('article');card.className='product';
+  const imageBox=document.createElement('div');imageBox.className='product-image';
+  const img=document.createElement('img');img.loading='lazy';img.src=p.image;img.alt=p.name;imageBox.append(img);
+  const body=document.createElement('div');body.className='product-body';
+  const name=document.createElement('h3');name.className='product-name';name.textContent=p.name;
+  const price=document.createElement('p');price.className='price';price.textContent=rupees(p.price);
+  body.append(name,price);
+  if(p.fabric){const fabric=document.createElement('p');fabric.className='product-meta';fabric.textContent='Fabric: '+p.fabric;body.append(fabric);}
+  if(p.sizes.length){const sizes=document.createElement('p');sizes.className='product-meta';sizes.textContent='Sizes: '+p.sizes.join(' · ');body.append(sizes);}
+  const order=document.createElement('button');order.className='order';order.textContent='Enquire on WhatsApp ↗';order.onclick=()=>openOrder(p.id);body.append(order);
+  const tryButton=document.createElement('button');tryButton.className='order tryon-button';tryButton.textContent='✦ Try It On with AI';tryButton.onclick=()=>openTryOn(p.id);body.append(tryButton);
+  card.append(imageBox,body);parent.append(card);
+ }
+}
+async function loadProducts(){try{const r=await fetch('/api/products');if(!r.ok)throw Error('Catalog is temporarily unavailable');const d=await r.json();products=d.products||[];STORE.whatsapp=d.whatsapp||'';renderProducts()}catch(e){document.getElementById('products').textContent='Unable to load the collection. Please refresh the page.'}}
+function setFilter(f){currentFilter=f;document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.dataset.filter===f));renderProducts()}
+function openOrder(id){selectedProduct=products.find(p=>p.id===id);if(!selectedProduct)return;const p=selectedProduct;
+ document.getElementById('modalProduct').textContent=`${p.name} · ${rupees(p.price)} · Product ${p.code}${p.fabric?' · Fabric: '+p.fabric:''}`;
+ const sizeControl=document.getElementById('size');sizeControl.replaceChildren();
+ for(const size of p.sizes){let option=document.createElement('option');option.value=size;option.textContent=size;sizeControl.append(option)}
+ sizeControl.value=p.sizes.includes('M')?'M':p.sizes[0];document.getElementById('orderModal').classList.add('open');}
+function closeModal(){document.getElementById('orderModal').classList.remove('open')}
+function openWhatsApp(text){if(!STORE.whatsapp){alert('WhatsApp ordering will be available soon.');return}window.open(`https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(text)}`,'_blank','noopener,noreferrer')}
+function sendOrder(){if(!selectedProduct)return;const size=document.getElementById('size').value;const name=document.getElementById('customerName').value.trim();const p=selectedProduct;
+ openWhatsApp(`Hello ${STORE.name}! I'm interested in:\nProduct: ${p.name}\nCode: ${p.code}\nPrice: ${rupees(p.price)}\nSize: ${size}${p.fabric?'\nFabric: '+p.fabric:''}${name?'\nName: '+name:''}\nPlease confirm availability and delivery charges.`)}
+function contactWhatsApp(e){if(e)e.preventDefault();openWhatsApp(`Hello ${STORE.name}! I'd like to know more about your clothing collection.`)}
+document.getElementById('orderModal').addEventListener('click',e=>{if(e.target.id==='orderModal')closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+let tryOnSelected=null,tryOnBusy=false,tryOnPreviewUrl=null;
+function openTryOn(id){
+ tryOnSelected=products.find(p=>p.id===id);if(!tryOnSelected)return;
+ document.getElementById('tryOnProduct').textContent=tryOnSelected.name+' • '+rupees(tryOnSelected.price);
+ document.getElementById('tryOnGarment').src=tryOnSelected.image;
+ document.getElementById('tryOnPhoto').value='';document.getElementById('tryOnConsent').checked=false;
+ document.getElementById('tryOnPersonPreview').style.display='none';document.getElementById('tryOnEmpty').style.display='flex';
+ document.getElementById('tryOnResult').hidden=true;document.getElementById('tryOnStatus').textContent='';
+ document.getElementById('tryOnModal').classList.add('open');document.body.classList.add('tryon-open');
+}
+function closeTryOn(){if(tryOnBusy)return;document.getElementById('tryOnModal').classList.remove('open');document.body.classList.remove('tryon-open');if(tryOnPreviewUrl){URL.revokeObjectURL(tryOnPreviewUrl);tryOnPreviewUrl=null}}
+function previewTryOnPhoto(){const f=document.getElementById('tryOnPhoto').files[0];if(tryOnPreviewUrl)URL.revokeObjectURL(tryOnPreviewUrl);if(!f)return;tryOnPreviewUrl=URL.createObjectURL(f);document.getElementById('tryOnPersonPreview').src=tryOnPreviewUrl;document.getElementById('tryOnPersonPreview').style.display='block';document.getElementById('tryOnEmpty').style.display='none'}
+const wait=ms=>new Promise(done=>setTimeout(done,ms));
+async function generateTryOn(){
+ if(tryOnBusy||!tryOnSelected)return;
+ const f=document.getElementById('tryOnPhoto').files[0];const status=document.getElementById('tryOnStatus');
+ if(!f){status.textContent='Please choose your photo.';return}
+ if(f.size>6*1024*1024){status.textContent='Please select a photo under 6 MB.';return}
+ if(!document.getElementById('tryOnConsent').checked){status.textContent='Please review and accept the photo consent first.';return}
+ tryOnBusy=true;document.getElementById('generateTryOn').disabled=true;document.getElementById('tryOnResult').hidden=true;
+ try{
+  status.textContent='Preparing photos for local AI processing…';const form=new FormData();form.append('photo',f);form.append('product_id',tryOnSelected.id);form.append('consent','yes');
+  const start=await fetch('/api/tryon/start',{method:'POST',body:form});const data=await start.json();if(!start.ok)throw Error(data.error||'Unable to start try-on');
+  for(let i=0;i<240;i++){
+   status.textContent='Creating your virtual try-on… This may take several minutes depending on your computer.';
+   await wait(2500);const response=await fetch('/api/tryon/status/'+encodeURIComponent(data.job_id));const result=await response.json();
+   if(!response.ok||result.status==='failed')throw Error(result.error||'Try-on failed');
+   if(result.status==='completed'){
+    const pic=document.getElementById('tryOnOutput');pic.src=result.image;
+    document.getElementById('tryOnResult').hidden=false;status.textContent='Your AI try-on preview is ready.';return;
+   }
+  }
+  throw Error('Still processing. Please try again in a moment.');
+ }catch(err){status.textContent=err.message||'Unable to generate the preview.'}finally{tryOnBusy=false;document.getElementById('generateTryOn').disabled=false}
+}
+function orderFromTryOn(){if(!tryOnSelected)return;const p=tryOnSelected;openWhatsApp('Hello NEKARRA! I tried on '+p.name+' ('+p.code+') virtually. Price: '+rupees(p.price)+'. Please share size availability and ordering details.')}
+document.getElementById('tryOnModal').addEventListener('click',e=>{if(e.target.id==='tryOnModal')closeTryOn()});
+
+document.getElementById('year').textContent=new Date().getFullYear();loadProducts();
+</script>
+</body></html>
