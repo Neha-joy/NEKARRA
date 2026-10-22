@@ -46,6 +46,31 @@ init_db()
 def hash_password(pw, salt):
     return hashlib.pbkdf2_hmac('sha256', pw.encode('utf-8'), bytes.fromhex(salt), 310000).hex()
 
+    
+def configure_hosted_admin():
+    password = os.environ.get("NEKARRA_ADMIN_PASSWORD")
+
+    if not password:
+        return
+
+    if len(password) < 12:
+        raise RuntimeError(
+            "NEKARRA_ADMIN_PASSWORD must contain at least 12 characters."
+        )
+
+    salt = secrets.token_hex(16)
+    password_hash = hash_password(password, salt)
+
+    with connect() as c:
+        if not c.execute("SELECT 1 FROM admin WHERE id=1").fetchone():
+            c.execute(
+                "INSERT INTO admin(id, salt, passhash) VALUES (1, ?, ?)",
+                (salt, password_hash)
+            )
+
+configure_hosted_admin()
+
+
 def has_admin():
     with connect() as c: return bool(c.execute('SELECT 1 FROM admin WHERE id=1').fetchone())
 
